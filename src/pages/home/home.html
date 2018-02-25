@@ -1,17 +1,43 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="custom_blue">
+    <ion-title>Internet of Things</ion-title>
+
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="ios-home"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="md-backspace"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Ionic Application</h2><!--
+  <button ion-button color="dark">Dark</button>
+  <br>-->
+
+  <!-- Float the icon left <!--
+  <button ion-button icon-left>
+    <ion-icon name="ios-appstore"></ion-icon>
+    Ir a la App Store
+  </button>-->
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item *ngFor="let item of lista">
+        <ion-icon [name]="item.name" item-start [ngStyle]="{'color': item.color}"></ion-icon>
+        {{ item.titulo }}
+      </button>
+    </ion-list>
+  </ion-card>
+
 </ion-content>

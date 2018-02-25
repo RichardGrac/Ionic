@@ -1,7 +1,7 @@
 {
-  "name": "myApp",
+  "name": "iot_Interfaces",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Richard Grac",
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
