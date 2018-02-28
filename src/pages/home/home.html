@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar color="custom_blue">
-    <ion-title>Internet of Things</ion-title>
+    <ion-title>ADMINISTRACIÓN</ion-title>
 
     <ion-buttons start>
       <button ion-button icon-only>
@@ -18,20 +18,21 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Ionic Application</h2><!--
-  <button ion-button color="dark">Dark</button>
-  <br>-->
+  <h2>Dispositivos</h2>
+  <!--<button ion-button color="dark">Dark</button>-->
+  <!--<br>-->
 
-  <!-- Float the icon left <!--
-  <button ion-button icon-left>
-    <ion-icon name="ios-appstore"></ion-icon>
-    Ir a la App Store
-  </button>-->
+  <!--&lt;!&ndash; Float the icon left &ndash;&gt;-->
+  <!--<button ion-button icon-left>-->
+    <!--<ion-icon name="ios-appstore"></ion-icon>-->
+    <!--Ir a la App Store-->
+  <!--</button>-->
+
   <ion-card>
     <ion-card-header>
-      Explore Nearby
+      Opciones
     </ion-card-header>
-  
+
     <ion-list>
       <button ion-item *ngFor="let item of lista">
         <ion-icon [name]="item.name" item-start [ngStyle]="{'color': item.color}"></ion-icon>

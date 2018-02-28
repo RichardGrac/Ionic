@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MasinfoPage } from '../masinfo/masinfo';
 
 @Component({
   selector: 'page-about',
@@ -11,4 +12,7 @@ export class AboutPage {
 
   }
 
+  otraPagina(){
+    this.navCtrl.push(MasinfoPage);
+  }
 }
