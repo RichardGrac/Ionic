@@ -4,10 +4,14 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { TecnologiasPage } from '../pages/tecnologias/tecnologias';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { YoutubePage } from '../pages/youtube/youtube';
+import { GridPage } from '../pages/grid/grid';
+import { AlertPage } from "../pages/alert/alert";
+
+/* Secundarias: */
 import { MasinfoPage } from '../pages/masinfo/masinfo';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,10 +21,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    TecnologiasPage,
     HomePage,
     TabsPage,
     YoutubePage,
+    GridPage,
+    AlertPage,
     MasinfoPage
   ],
   imports: [
@@ -31,10 +37,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    TecnologiasPage,
     HomePage,
     TabsPage,
     YoutubePage,
+    GridPage,
+    AlertPage,
     MasinfoPage
   ],
   providers: [

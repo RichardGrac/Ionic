@@ -3,10 +3,10 @@ import { NavController } from 'ionic-angular';
 import { MasinfoPage } from '../masinfo/masinfo';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-tecnologias',
+  templateUrl: 'tecnologias.html'
 })
-export class ContactPage {
+export class TecnologiasPage {
 
   items = [];
 
@@ -69,7 +69,7 @@ export class ContactPage {
     ]
   }
 
-  /* En contact.html estamos llamando a la esta función al Evento Clic. Ésta llamará
+  /* En tecnologias.html estamos llamando a la esta función al Evento Clic. Ésta llamará
    * a sú vez a 'MasinfoPage' con uno de los item de arriba, como parámetro. */
   openNavDetailsPage(item) {
     this.navCtrl.push(MasinfoPage, { item: item });
